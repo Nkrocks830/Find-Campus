@@ -35,14 +35,9 @@ const useAuthStore = create(
         set({ loading: true })
         try {
           const { data, error } = await supabase.auth.signUp({
-            email,
-            password,
-            options: {
-              data: {
-                full_name: name,
-              }
-            }
-          })
+  email,
+  password
+})
           if (error) throw error
           
           // If session is present, they are fully logged in (Email Confirmations disabled)
