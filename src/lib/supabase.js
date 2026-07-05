@@ -1,3 +1,6 @@
+console.log("SUPABASE URL =", import.meta.env.VITE_SUPABASE_URL)
+console.log("ANON KEY EXISTS =", !!import.meta.env.VITE_SUPABASE_ANON_KEY)
+console.log("HF TOKEN EXISTS =", !!import.meta.env.VITE_HF_API_TOKEN)
 import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
