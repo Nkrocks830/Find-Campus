@@ -1,9 +1,4 @@
-console.log("URL:", JSON.stringify(import.meta.env.VITE_SUPABASE_URL))
-console.log("KEY:", JSON.stringify(import.meta.env.VITE_SUPABASE_ANON_KEY))
-console.log("HF:", JSON.stringify(import.meta.env.VITE_HF_API_TOKEN))
 
-console.log("typeof URL:", typeof import.meta.env.VITE_SUPABASE_URL)
-console.log("typeof KEY:", typeof import.meta.env.VITE_SUPABASE_ANON_KEY)
 import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
